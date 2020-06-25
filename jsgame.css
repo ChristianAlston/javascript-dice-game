@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Work Sans';
+}
+
+body {
+
+    background-color: rgb(230, 230, 230);
+}
+
+.gameboard {
+    height: 80vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    left: 10%;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    box-shadow: darkgray 3px 3px 10px;
+}
+
+.gameboard>h1 {
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    left: 42%;
+    top: 20px;
+    font-weight: 100;
+}
+
+.gameboard>h2 {
+
+    height: 10px;
+    position: relative;
+    left: 30%;
+}
+
+.player {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    line-height: 120px;
+    text-align: center;
+    margin: 100px 20%;
+}
+
+.player>h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
