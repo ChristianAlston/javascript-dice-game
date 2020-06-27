@@ -13,25 +13,28 @@
 
 <body>
     <div class="gameboard" id="game">
-        <h1>DICE</h1>
-
-
-        <div class="player">
-            <h2 id="player1">Player 1</h2>
-            <h3 id="player1roundscore">Round Score:</h3>
-            <div class="score">
-                <h1 id="score">0</h1>
+        <h1>STRANGE DICE</h1>
+        <h2 class="newgame">NEW GAME</h2>
+        <div class="match">
+            <div class="player">
+                <h2 id="player1">Player 1</h2>
+                <h3 id="player1roundscore">Round Score:</h3>
+                <h1 id="player1score">0</h1>
+                <h2>High Score</h2>
+                <button id="player1button" class="roll">Roll</button>
             </div>
-        </div>
-        <div class="player">
-            <h2 id="player2">Player 2</h2>
-            <h3 id="player2roundscore">Round Score:</h3>
-            <div class="score">
-                <h1 id="score">0</h1>
+            <img class="dice" id="dice" src="1.png" alt="">
+            <div class="player">
+                <h2 id="player2">Player 2</h2>
+                <h3 id="player2roundscore">Round Score:</h3>
+                <h1 id="player2score">0</h1>
+                <h2>High Score</h2>
+                <button class="roll">Roll</button>
             </div>
         </div>
     </div>
-    <h2>High Score</h2>
+
+
 </body>
 <script src="jsgame.js"></script>
 
