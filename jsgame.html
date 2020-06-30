@@ -8,30 +8,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
     <link rel="stylesheet" href="jsgame.css">
 </head>
 
-<body>
+<body id="body">
     <div class="gameboard" id="game">
         <h1>STRANGE DICE</h1>
-        <h2 class="newgame">NEW GAME</h2>
-        <div class="match">
-            <div class="player">
+        <h2 id="newgame" class="newgame">NEW GAME</h2>
+        <button id="darkmode" class="dark">Dark Mode</button>
+        <i id="arrow" class="fas fa-arrow-right reverse1 "></i>
+        <div id="match" class="match">
+            <div id="player1box" class="player">
                 <h2 id="player1">Player 1</h2>
-                <h3 id="player1roundscore">Round Score:</h3>
-                <h1 id="player1score">0</h1>
-                <h2>High Score</h2>
-                <button id="player1button" class="roll">Roll</button>
+                <h3 id="player1roundscore">YOU ROLLED:</h3>
+                <h1 id="score1"></h1>
+                <button id="roll" class="roll">Roll</button>
             </div>
             <img class="dice" id="dice" src="1.png" alt="">
-            <div class="player">
+            <div id="player2box" class="player">
                 <h2 id="player2">Player 2</h2>
-                <h3 id="player2roundscore">Round Score:</h3>
-                <h1 id="player2score">0</h1>
-                <h2>High Score</h2>
-                <button class="roll">Roll</button>
+                <h3 id="player2roundscore">YOU ROLLED:</h3>
+                <h1 id="score2"></h1>
+                <button id="roll2" class="roll">Roll</button>
             </div>
         </div>
+        <p class="never">be the first to roll a 3. if you roll a 2 you automatically lose.</p>
     </div>
 
 
